@@ -1,0 +1,202 @@
+html, body {
+  position:relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+body {
+
+}
+#website-container {
+  position:relative;
+  max-width: 1280px;
+  width:80%;
+  margin:0px auto 0px auto;
+}
+header {
+  position:relative;
+  width:100%;
+  height:100px;
+  display:flex;
+  justify-content: space-between;
+  padding-top:40px;
+}
+header .logo {
+  position:relative;
+  width:150px;
+  height:100%;
+  background-image:url('../res/batchspace-logo.svg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+header .menu {
+  position:relative;
+  display:flex;
+  font-size:0.66em;
+  margin-top:15px;
+  height:auto;
+}
+header .menu .menu-item {
+  position:relative;
+  margin-left:40px;
+  height:auto;
+}
+header .menu .menu-item a {
+  cursor:pointer;
+}
+header .menu .menu-item a:hover {
+}
+.batch-space-front {
+  position:relative;
+  width:100%;
+  height:630px;
+  background-image:url('../res/outside_wall.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.intro {
+  position:relative;
+  width:100%;
+  margin-top:120px;
+}
+.intro .intro-text {
+  position:relative;
+  width:66.66%;
+  margin: 0px auto 0px auto;
+  text-align:center;
+}
+.intro .intro-buttons {
+  position:relative;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  margin-top:40px;
+}
+
+/* button */
+button {
+  position:relative;
+  background:none;
+  border:2px solid black;
+  padding:15px 40px 15px 40px;
+  margin:0px 10px 0px 10px;
+  border-radius:3px;
+  font-size:0.66em;
+  cursor:pointer;
+  transition:all 50ms ease-out;
+}
+button:hover {
+  background:black;
+  color:white;
+}
+a {
+  color:black;
+}
+a:hover {
+  text-decoration: none;
+}
+
+
+
+#facilities {
+  position:relative;
+  width:100%;
+  display:grid;
+  margin-top:120px;
+  grid-gap:20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 280px;
+}
+#facilities .facility {
+  position:relative;
+}
+#facilities .facility:hover .facility-overlay {
+  opacity:1;
+}
+#facilities .facility:hover .facility-overlay-hover {
+  opacity:1;
+  font-size:0.66em;
+}
+#facilities .facility.no-hover:hover .facility-overlay {
+  opacity:1;
+}
+#facilities .facility.no-hover:hover .facility-overlay-hover {
+  opacity:0;
+}
+/*
+#facilities .facility::before {
+  content: "";
+  padding-bottom: 60%;
+  display: inline-block;
+  vertical-align: top;
+}*/
+#facilities .facility .facility-overlay-hover {
+  opacity:0;
+  background:black;
+}
+#facilities .facility .facility-overlay-hover a {
+  color:white;
+}
+#facilities .facility div {
+  position:absolute;
+  width:100%;
+  height:100%;
+  line-height:100%;
+  background:rgba(0, 0, 0, 0.58);
+  color:white;
+  transition:all 80ms ease-out;
+}
+#facilities .facility div * {
+  display:block;
+  width:100%;
+  text-align:center;
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.two-columns {
+  position:relative;
+  margin-top:120px;
+  display:flex;
+  flex:auto;
+}
+.two-columns .two-columns-headline {
+  position:relative;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-weight:500;
+}
+.two-columns .two-columns-content {
+  flex-grow:1;
+}
+#contact .contact-details {
+  position:relative;
+  display:flex;
+  flex:auto;
+  justify-content: flex-start;
+  margin-top:20px;
+}
+#contact .contact-details .contact-address {
+  margin-right:80px;
+}
+footer {
+  box-sizing: border-box;
+  position:relative;
+  font-size:0.66em;
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  padding-left:200px;
+  margin-top:120px;
+  margin-bottom:40px;
+}
+footer * {
+  flex-basis:content;
+  margin-right:40px;
+}
