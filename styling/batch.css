@@ -2,13 +2,14 @@ html, body {
   position:relative;
   font-family: 'Inter', sans-serif;
   font-size: 24px;
+  font-weight:400;
   line-height: 32px;
   margin:0px;
   padding:0px;
   box-sizing:border-box;
 }
 body {
-
+  -webkit-text-size-adjust: 100%;
 }
 #website-container {
   position:relative;
@@ -22,7 +23,8 @@ header {
   height:100px;
   display:flex;
   justify-content: space-between;
-  padding-top:40px;
+
+  margin-top:40px;
 }
 header .logo {
   position:relative;
@@ -37,13 +39,15 @@ header .menu {
   position:relative;
   display:flex;
   font-size:0.66em;
-  margin-top:15px;
+  padding-top:22px;
   height:auto;
+  line-height:0.66em;
 }
 header .menu .menu-item {
   position:relative;
   margin-left:40px;
   height:auto;
+  line-height:0.66em;
 }
 header .menu .menu-item a {
   cursor:pointer;
@@ -53,7 +57,7 @@ header .menu .menu-item a:hover {
 .batch-space-front {
   position:relative;
   width:100%;
-  height:630px;
+  height:530px;
   background-image:url('../res/outside_wall.jpg');
   background-size:cover;
   background-repeat: no-repeat;
@@ -62,7 +66,8 @@ header .menu .menu-item a:hover {
 .intro {
   position:relative;
   width:100%;
-  margin-top:120px;
+  margin-top:80px;
+  margin-bottom:160px;
 }
 .intro .intro-text {
   position:relative;
@@ -74,23 +79,26 @@ header .menu .menu-item a:hover {
   position:relative;
   width:100%;
   display:flex;
+  flex:auto;
   justify-content: center;
   margin-top:40px;
 }
 
 /* button */
-button {
+a.button {
   position:relative;
+  display:block;
   background:none;
   border:2px solid black;
   padding:15px 40px 15px 40px;
   margin:0px 10px 0px 10px;
-  border-radius:3px;
+  border-radius:4px;
   font-size:0.66em;
   cursor:pointer;
   transition:all 50ms ease-out;
+  text-decoration:none;
 }
-button:hover {
+a.button:hover {
   background:black;
   color:white;
 }
@@ -102,54 +110,51 @@ a:hover {
 }
 
 
-
+.single-headline {
+  position:relative;
+  text-align:left;
+  margin-top:120px;
+  font-weight:500 !important;
+  width:100%;
+}
 #facilities {
   position:relative;
   width:100%;
   display:grid;
-  margin-top:120px;
+  margin-top:40px;
   grid-gap:20px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 280px;
 }
 #facilities .facility {
   position:relative;
+  background-position: center;
 }
-#facilities .facility:hover .facility-overlay {
-  opacity:1;
+#facilities .facility .facility-overlay {
+  background:rgba(0, 0, 0, 0.2);
 }
-#facilities .facility:hover .facility-overlay-hover {
-  opacity:1;
-  font-size:0.66em;
-}
-#facilities .facility.no-hover:hover .facility-overlay {
-  opacity:1;
-}
-#facilities .facility.no-hover:hover .facility-overlay-hover {
-  opacity:0;
-}
-/*
-#facilities .facility::before {
-  content: "";
-  padding-bottom: 60%;
-  display: inline-block;
-  vertical-align: top;
-}*/
 #facilities .facility .facility-overlay-hover {
+  position:absolute;
   opacity:0;
+  font-size:0.66em;
   background:black;
 }
 #facilities .facility .facility-overlay-hover a {
   color:white;
+}
+#facilities .facility .facility-overlay span {
+  text-decoration:underline;
+}
+#facilities .facility.no-hover .facility-overlay span {
+  text-decoration:none;
 }
 #facilities .facility div {
   position:absolute;
   width:100%;
   height:100%;
   line-height:100%;
-  background:rgba(0, 0, 0, 0.58);
   color:white;
-  transition:all 80ms ease-out;
+  transition:opacity 120ms ease-out;
 }
 #facilities .facility div * {
   display:block;
@@ -158,6 +163,23 @@ a:hover {
   position:absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+#facilities .facility:hover .facility-overlay {
+  opacity:1;
+}
+#facilities .facility:hover .facility-overlay-hover {
+  opacity:1;
+  display:block;
+}
+#facilities .facility.no-hover .facility-overlay {
+
+}
+#facilities .facility.no-hover:hover .facility-overlay {
+  opacity:1;
+}
+#facilities .facility.no-hover:hover .facility-overlay-hover {
+  opacity:0;
+  top:0px;
 }
 .two-columns {
   position:relative;
