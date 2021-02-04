@@ -30,7 +30,7 @@ header .logo {
   position:relative;
   width:150px;
   height:100%;
-  background-image:url('../res/batchspace-logo.svg');
+  background-image:url('../res/batchspace-logo.png');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: top left;
@@ -39,7 +39,7 @@ header .menu {
   position:relative;
   display:flex;
   font-size:0.66em;
-  padding-top:22px;
+  padding-top:10px;
   height:auto;
   line-height:0.66em;
 }
@@ -52,13 +52,12 @@ header .menu .menu-item {
 header .menu .menu-item a {
   cursor:pointer;
 }
-header .menu .menu-item a:hover {
-}
+
 .batch-space-front {
   position:relative;
   width:100%;
   height:530px;
-  background-image:url('../res/outside_wall.jpg');
+  background-image:url('../res/hd_batchspace.jpg');
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
