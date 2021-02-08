@@ -1,4 +1,4 @@
-const header = document.querySelector(".batchspace-header");    
+const header = document.querySelector(".batchspace-header");
 const el = document.querySelector(".scroll_observer");    
 const options = {
     root: null,

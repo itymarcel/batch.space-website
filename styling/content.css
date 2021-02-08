@@ -154,9 +154,15 @@ main section.facilities .wrapper .big-copy {
 
 main section.facilities .facility {
     font-size: var(--big-haas-type);
+    cursor: pointer;
+    transition: transform var(--transition-time) var(--easinout);
 }
 
-main section.facilities .facility > div:not(.image) {
+main section.facilities .facility:hover {
+    transform: scale(1.05, 1.05);
+}
+
+main section.facilities .facility a > div:not(.image) {
     text-align: center;
     font-weight: 400;
     margin-top: var(--base-spacing);
@@ -198,11 +204,6 @@ main section.join-us {
     text-align: center;    
 }
 
-main section.join-us .one-column {
-    perspective: 800px;
-    transform-origin: center;
-}
-
 main section.join-us .one-column .big-copy {
     padding-right: 0px;
     margin-bottom: calc(var(--base-spacing)*5);
@@ -215,6 +216,14 @@ main section.join-us .button-link {
     margin-right: auto;
     margin-top: var(--base-spacing);
     margin-bottom: var(--base-spacing);
+}
+
+main section.join-us .warpy-rect-container {
+    position:absolute;
+    width:100%;
+    height:100%;
+    perspective: 800px;
+    transform-origin: center;
 }
 
 main section.join-us .warpy-rect {

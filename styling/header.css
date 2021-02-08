@@ -99,6 +99,11 @@ header nav ol li.button {
     header nav ol {
         display: none;
     }
+
+    header nav ol.visible {
+        display: block;
+        position: absolute;
+    }
 }
 
 

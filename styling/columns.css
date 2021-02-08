@@ -39,3 +39,10 @@
     margin-top: calc(var(--base-spacing)*4);
     padding-right: calc(var(--base-spacing)*4);
 }
+
+@media only screen 
+  and (max-width: 750px) {
+    .columns .big-copy {
+        padding-right: 0px;
+    }
+}

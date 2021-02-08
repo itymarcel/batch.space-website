@@ -115,6 +115,15 @@ h3 {
     background-position: center;
 }
 
+.photo-attribution {
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+    color: white;
+    font-size: 8px;
+    opacity: 0.5;
+}
+
 @media only screen 
   and (max-width: 750px) {
     .floating-image {
