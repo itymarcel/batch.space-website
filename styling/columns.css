@@ -1,0 +1,41 @@
+.columns {
+    display: flex;
+    min-height: 10px;
+    height: auto;
+}
+
+@media only screen 
+  and (max-width: 750px) {
+    .columns {
+        flex-direction: column;
+    }
+}
+
+.columns > div {
+    margin-right: calc(var(--base-spacing)*2);
+}
+.columns > div:last-child {
+    margin-right: 0px;
+}
+
+.columns .one-column {
+    flex: 1 0 0;
+}
+
+.columns .two-columns {
+    flex: 2 0 0;
+}
+
+.columns .headline {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.columns .big-copy {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    line-height: 39px;
+    margin-top: calc(var(--base-spacing)*4);
+    padding-right: calc(var(--base-spacing)*4);
+}

@@ -1,0 +1,17 @@
+footer {
+    background: black;
+    color: white;
+    padding-top: calc(var(--base-spacing)*5);
+    padding-bottom: calc(var(--base-spacing)*5);
+}
+
+footer .wrapper {
+    width: var(--site-width);
+    max-width: var(--site-max-width);
+    margin: 0px auto 0px auto;
+}
+
+footer .columns.wrapper .one-column .big-copy {
+    margin-top: 0px;
+    padding-right: 0px;
+}

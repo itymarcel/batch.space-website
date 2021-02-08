@@ -1,0 +1,128 @@
+@import url("https://use.typekit.net/xsr4whi.css");
+
+:root {
+    --beige:#FFFAE6;
+
+	--text-colour:black;
+    --link-colour: black;
+    --big-haas-type: 19px;
+    --small-haas-type: 12px;
+
+    --purple: #2A13AD;
+    --gold: #FFE65F;
+    --highlight-colour: #FFEA00;
+    --thin-line-colour: #000;
+    --site-width: 90vw;
+    --site-max-width: 1280px;
+    --base-spacing: 14px;
+
+    --easeout:cubic-bezier(0.250, 0.250, 0.015, 1.005);
+    --easinout: cubic-bezier(0.410, 0.025, 0.175, 0.985);
+    --transition-time: 80ms;
+}
+
+html, body {
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-colour);
+    font-size: 14px;
+    line-height: 24px;
+
+    background-color: var(--beige);
+    margin: 0px;
+    padding: 0px;
+}
+
+::-moz-selection,
+::selection {
+    background-color: #FFFAE6;
+}
+
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* global elements */
+.italic {
+    font-style: italic;
+}
+
+.highlighted-text {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.greyed {
+    opacity: 0.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.external-link {
+    cursor: ne-resize;
+}
+
+a.button-link {
+    display: block;
+    text-decoration: none;
+    width: max-content;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.button-link:hover {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: calc(var(--base-spacing) * 3);
+}
+h3 {
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+.button {
+    text-align: center;
+    border: 1px solid var(--thin-line-colour);
+
+    transition: all var(--transition-time) var(--easeout);
+}
+.button:hover {
+    color: var(--beige);
+    background-color: var(--thin-line-colour);
+}
+
+.full-width-image {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.floating-image {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen 
+  and (max-width: 750px) {
+    .floating-image {
+        display: none;
+    }
+}
+
+.scroll_observer {
+    position:absolute;
+    top: calc(var(--base-spacing)*4);
+}

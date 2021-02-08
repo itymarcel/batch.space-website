@@ -9,19 +9,105 @@
         <meta name="keyword" content="" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" href="styling/batchspace.css" />
+        <link rel="stylesheet" href="styling/generals.css" />
+        <link rel="stylesheet" href="styling/columns.css" />
+        <link rel="stylesheet" href="styling/header.css" />
+        <link rel="stylesheet" href="styling/content.css" />
+        <link rel="stylesheet" href="styling/footer.css" />
     </head>
     <body>
         <div class="scroll_observer"></div>
-        <header></header>
+        <header class="batchspace-header">
+            <div class="logo"></div>
+            <nav>
+                <div class="nav-toggle"></div>
+                <ol>
+                    <a href="#" target="_self"><li>Packages</li></a>
+                    <a href="#" target="_self"><li>Facilities</li></a>
+                    <a class="button-link external-link" href="https://batchspace.spaces.nexudus.com/" target="_blank"><li class="button">Member Area</li></a>
+                </ol>
+            </nav>
+        </header>
         <main>
-            <section class="logo">
-
+            <section class="intro-images">
+                <div class="slideshow-container">
+                    <div class="slideshow-all-images">
+                        <div class="slideshow-image" style="background-image:url('images/intro-old-kitchen.jpg')"></div>
+                        <div class="slideshow-image" style="background-image:url('images/intro-small-old-kitchen-2.jpg')"></div>
+                        <div class="slideshow-image" style="background-image:url('images/intro-old-kitchen-3.jpg')"></div>
+                    </div>
+                </div>
+                <div class="floating-image" style="background-image:url('images/intro-small-old-kitchen-3.jpg')">
+                    
+                </div>
             </section>
+
+            <section class="columns who-we-are">
+                <div class="one-column">
+                    <div class="headline">Who we are</div>
+                </div>
+                <div class="two-columns">
+                    <article class="big-copy">Batch.space is a new independent studio in East London offering a unique mix of facilities to nurture a vibrant and diverse community of people working across creative disciplines.</article>
+                    <a class="external-link" href="https://batchspace.spaces.nexudus.com/?portal&" target="_blank"><div class="button">Become a member</div></a>
+                </div>
+
+                <div class="floating-image" style="background-image:url('images/who-are-we-booth.jpg')"></div>
+            </section>
+
+            <section class="facilities">
+                <div class="columns wrapper">
+                    <div class="one-column">
+                        <div class="headline">Facilities</div>
+                    </div>
+                    <div class="two-columns">
+                        <article class="big-copy"><span class="highlighted-text">This space is for everyone by everyone</span> = if you have some specific requirements, we will do our best to make sure you have everything you need to work and get creative!</article>
+                    </div>
+                </div>
+
+                <div class="columns wrapper">
+                    <div class="one-column facility facility-workspace">
+                        <div class="image"></div>
+                        <div>Adaptable working spaces</div>
+                    </div>
+                    <div class="one-column facility facility-workshop">
+                        <div class="image"></div>
+                        <div>Full workshop access</div>
+                    </div>
+                    <div class="one-column facility facility-meeting">
+                        <div class="image"></div>
+                        <div>Meeting rooms</div>
+                    </div>
+                </div>
+                <div class="full-width-image hackney-depot"></div>
+            </section>
+
+            <section class="columns join-us">
+                <div class="one-column">
+                    <div class="warpy-rect"></div>
+                    <div class="headline">Interested in joining the community?</div>
+                    <div class="headline big-copy">Desks are for grab right now.</div>
+                    <a class="button-link" href="https://batchspace.spaces.nexudus.com/?portal&" target="_blank"><div class="button">Discover our packages</div></a>
+                    <a class="button-link" href="mailto:hello@batch.space"><div class="button">Get in touch</div></a>
+                </div>
+            </section>
+
         </main>
-    <footer>
-        The content of this site is licensed under the Creative Commons Attribution 3.0 Unported License. For any inqueries please contact us <a href="mailto:info@matalog.org">here.</a>
-    </footer>
+        <footer>
+            <section class="columns wrapper">
+                <div class="one-column"><div class="headline">Contact us</div></div>
+                <div class="one-column">
+                    <article class="big-copy">
+                        Hackney Depot,<br>5 Sheep Lane,<br>E8 4QS
+                    </article>
+                </div>
+                <div class="one-column">
+                    <article class="big-copy">
+                        Email us<br><a href="mailto:hello@batch.space">hello@batch.space</a>
+                    </article>
+                </div>
+                
+            </section> 
+        </footer>
     
     </body>
     <script src="js/intersectionobserver.js"></script>
