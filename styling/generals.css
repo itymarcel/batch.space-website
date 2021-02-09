@@ -133,5 +133,5 @@ h3 {
 
 .scroll_observer {
     position:absolute;
-    top: calc(var(--base-spacing)*4);
+    top: calc(var(--base-spacing)*1);
 }

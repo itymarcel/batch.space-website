@@ -170,27 +170,39 @@ main section.facilities .facility a > div:not(.image) {
 
 @media only screen 
   and (max-width: 750px) {
-    main section.facilities .facility > div:not(.image) {
+    main section.facilities .facility a > div:not(.image) {
         margin-bottom: calc(var(--base-spacing) * 4);
     }
 }
 
 main section.facilities .facility .image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     width: 100%;
     height: 250px;
+    overflow: hidden;
 }
 
-main section.facilities .facility.facility-workspace .image {
-    background-image: url('../images/facilities-workspace.gif');
+main section.facilities .facility .image .slideshow-container {
+    width: 100%;
+    height: 100%;
 }
-main section.facilities .facility.facility-workshop .image {
-    background-image: url('../images/facilities-workshop.gif');
+
+main section.facilities .facility .image .slideshow-container .slideshow-all-images {
+    display:flex;
+    flex-wrap: nowrap;
+    height:100%;
+    width: auto;
+
+    animation: slideshow 15s infinite;
+    animation-timing-function: linear;
+    animation-timing-function: var(--easinout);
 }
-main section.facilities .facility.facility-meeting .image {
-    background-image: url('../images/facilities-meeting.gif');
+
+main section.facilities .facility .image .slideshow-container .slideshow-all-images .slideshow-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    flex: 0 0 100%;
 }
 
 
@@ -206,6 +218,7 @@ main section.join-us {
 
 main section.join-us .one-column .big-copy {
     padding-right: 0px;
+    margin-top: calc(var(--base-spacing)*2);
     margin-bottom: calc(var(--base-spacing)*5);
 }
 
