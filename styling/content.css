@@ -117,8 +117,8 @@ main section.who-we-are .button {
 main section.who-we-are .floating-image {
     bottom: calc(var(--base-spacing)*-2);
     left: 50px;
-    width: 12vw;
-    height: 30vh;
+    width: 200px;
+    height: 250px;
     z-index:2;
 }
 
