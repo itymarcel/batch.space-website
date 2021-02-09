@@ -14,7 +14,7 @@ header {
     font-weight: 500;
     z-index: 100;
 
-    transition: all calc(var(--transition-time)) var(--easeout);
+    transition: all calc(var(--transition-time)*1.5) var(--easeout);
     transition-delay: calc(var(--transition-time) * 2) !important;
     background: rgba(255, 255, 255, 0);
 }
@@ -47,7 +47,7 @@ header .logo {
 
     transform: scale(1);
     transform-origin: center;
-    transition: all calc(var(--transition-time)) var(--easeout);
+    transition: all calc(var(--transition-time)*1.5) var(--easeout);
     transition-delay: calc(var(--transition-time) * 2) !important;
     cursor: pointer;
 }
@@ -65,7 +65,7 @@ header nav {
 
     transform-origin: right;
     transition-delay: calc(var(--transition-time) * 2) !important;
-    transition: all calc(var(--transition-time) * 2) var(--easeout);
+    transition: all calc(var(--transition-time) * 1.5) var(--easeout);
 }
 
 header nav .nav-toggle {
