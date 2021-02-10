@@ -38,6 +38,8 @@
 
 .columns .big-copy {
     font-family: 'Times New Roman', Times, serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
     font-size: 28px;
     line-height: 39px;
     margin-top: calc(var(--base-spacing)*4);
