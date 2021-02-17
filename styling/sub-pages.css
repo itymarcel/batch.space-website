@@ -22,6 +22,7 @@ section.sub-page-intro .columns {
 
 section.sub-page-intro h1 {
     font-size: 69px;
+    line-height: 60px;
     font-weight: normal;
     text-align: center;
 }
@@ -253,7 +254,17 @@ section.join-us .facilities-join-us {
     background-repeat: no-repeat;
 }
 
-
+section.sub-page-intro.besafe {
+    background-image: url('../res/wiggle_besafe.svg');
+    background-size: 30%;
+}
+@media only screen 
+  and (max-width: 750px) {
+    section.sub-page-intro.besafe {
+        background-size: 80%;
+        background-position: center 7vh;
+    }
+}
 section.sub-page-intro.besafe h1 {
     font-size: 69px;
     font-weight: normal;
@@ -262,4 +273,18 @@ section.sub-page-intro.besafe h1 {
 section.sub-page-intro.besafe .columns {
     width: 100%;
     max-width: 100%;
+}
+
+.current-measures {
+    margin-top: calc(var(--base-spacing)*5);
+    padding-bottom: calc(var(--base-spacing)*10);
+}
+.current-measures .headline {
+    margin-bottom: calc(var(--base-spacing)*2);
+}
+.current-measures ul {
+    margin: calc(var(--base-spacing)*4) 0px calc(var(--base-spacing)*4) 0px;
+}
+.current-measures ul li {
+    margin-bottom: var(--base-spacing);
 }
