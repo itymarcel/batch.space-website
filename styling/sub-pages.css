@@ -141,7 +141,7 @@ section.sub-page-intro.facilities-page .floating-image {
     padding-top: calc(var(--base-spacing)*2.5);
 }
 .studio-and-desks .images .full-width-image {
-    background-image: url('../images/who-are-we-booth.jpg');
+    background-image: url('../images/intro-old-kitchen.jpg');
     height: 50vh;
 }
 .studio-and-desks .images .floating-image {
@@ -159,7 +159,7 @@ section.sub-page-intro.facilities-page .floating-image {
     margin-top: calc(var(--base-spacing)*8);
 }
 .full-workshop .images .full-width-image {
-    background-image: url('../images/who-are-we-booth.jpg');
+    background-image: url('../images/facilities/workshop-01.jpg');
     height: 50vh;
 }
 .full-workshop .images .floating-image {
@@ -201,21 +201,21 @@ section.sub-page-intro.facilities-page .floating-image {
     margin-top: calc(var(--base-spacing)*8);
 }
 .meeting-rooms .images .full-width-image {
-    background-image: url('../images/who-are-we-booth.jpg');
+    background-image: url('../images/facilities/meeting-room-01.jpg');
     height: 50vh;
 }
 .meeting-rooms .images .floating-image {
     top: calc(var(--base-spacing)*-2);
     left: calc(var(--base-spacing)*8);
     width: 350px;
-    height: 180px;
+    height: 220px;
 }
 .meeting-rooms .images .floating-image.second {
     top: auto;
     bottom: calc(var(--base-spacing)*-2);
     left: calc(var(--base-spacing)*22);
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 180px;
 }
 
 .hackney-depot {
@@ -251,4 +251,15 @@ section.join-us .facilities-join-us {
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+
+section.sub-page-intro.besafe h1 {
+    font-size: 69px;
+    font-weight: normal;
+    text-align: left;
+}
+section.sub-page-intro.besafe .columns {
+    width: 100%;
+    max-width: 100%;
 }
