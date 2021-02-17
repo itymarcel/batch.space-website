@@ -11,6 +11,7 @@
     --purple: #2A13AD;
     --gold: #FFE65F;
     --highlight-colour: #FFEA00;
+    --button-hover-fill: #FFE65F;
     --thin-line-colour: #000;
     --site-width: 90vw;
     --site-max-width: 1280px;
@@ -58,9 +59,16 @@ html, body {
     opacity: 0.5;
 }
 
+.centered {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 600;
+}
+
 a {
     color: inherit;
-    text-decoration: none;
 }
 
 a.external-link {
@@ -90,15 +98,24 @@ h3 {
     margin-top: 0px;
 }
 
+section {
+    width: var(--site-width);
+    max-width: var(--site-max-width);
+    margin: 0px auto 0px auto;
+    scroll-margin-top: 10em;
+}
+
 .button {
     text-align: center;
     border: 1px solid var(--thin-line-colour);
-
+    padding: calc(var(--base-spacing) - 2px) 
+    calc(var(--base-spacing)*2) 
+    calc(var(--base-spacing))
+    calc(var(--base-spacing)*2);
     transition: all var(--transition-time) var(--easeout);
 }
 .button:hover {
-    color: var(--beige);
-    background-color: var(--thin-line-colour);
+    background-color: var(--button-hover-fill);
 }
 
 .full-width-image {

@@ -1,0 +1,225 @@
+section.sub-page-intro {
+    background-position: center top;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin-top: calc(var(--base-spacing)*4);
+    padding-top: calc(var(--base-spacing)*2);
+}
+section.sub-page-intro .columns {
+    max-width: 70%;
+    margin: 0px auto 0px auto;
+}
+section.sub-page-intro h1 {
+    font-size: 69px;
+    font-weight: normal;
+    text-align: center;
+}
+
+section.sub-page-intro .big-copy {
+    margin-top: 0px;
+}
+
+
+
+/* PACKAGES */
+
+section.sub-page-intro.packages {
+    background-image: url('../res/wiggle_packages.svg');
+}
+
+section.packages {
+    margin-bottom: calc(var(--base-spacing)*7);
+}
+
+section.packages .one-column {
+    margin-bottom: calc(var(--base-spacing)*3);
+}
+
+a.package-links {
+    width: auto;
+}
+
+.button.package {
+    width: 100%;
+    height: 100%;
+    padding-bottom: calc(var(--base-spacing)*7);
+}
+
+.button.package:hover {
+    background-color: white;
+    transform: translateY(calc(var(--base-spacing) * -1));
+}
+
+.button.package .icon {
+    width: calc(var(--base-spacing)*5);
+    height: calc(var(--base-spacing)*5);
+    margin: calc(var(--base-spacing)*3) auto calc(var(--base-spacing)*3) auto;
+    transition: transform calc(var(--transition-time)*2.5) var(--easeout);
+    transform: scale3d(0.7,0.7,0.7);
+}
+
+.button.package:hover .icon {
+    transform: scale3d(1, 1, 1);
+}
+
+.button.package .headline {
+    font-size: 30px;
+    display: block;
+    width: auto;
+    margin-bottom: calc(var(--base-spacing)*3);
+}
+
+.button.package:hover .headline span {
+    border-bottom: 2px solid var(--button-hover-fill);
+}
+
+.package-footer {
+    position: absolute;
+    width:100%;
+    padding-top: calc(var(--base-spacing) - 1px);
+    padding-bottom: calc(var(--base-spacing));
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    background: black;
+    text-align: center;
+
+}
+
+
+/* FACILITIES */
+
+section.sub-page-intro.facilities-page { 
+    background-image: url('../res/wiggle_facilities.svg');
+    background-size: 30%;
+    padding-bottom: calc(var(--base-spacing)*10);
+}
+section.sub-page-intro.facilities-page .image {
+    margin: calc(var(--base-spacing)*5) auto 0px auto;
+    background-size: contain;
+    width: 250px;
+    height: 150px;    
+}
+
+section.sub-page-intro.facilities-page .floating-image {
+    bottom: calc(var(--base-spacing)*8);
+    left: calc(50% - 20px);
+    width: 200px;
+    height: 100px;
+}
+.studio-and-desks .images {
+    margin-top: calc(var(--base-spacing)*2.5);
+    padding-top: calc(var(--base-spacing)*2.5);
+}
+.studio-and-desks .images .full-width-image {
+    background-image: url('../images/who-are-we-booth.jpg');
+    height: 50vh;
+}
+.studio-and-desks .images .floating-image {
+    top: 0px;
+    right: 0px;
+    width: 40%;
+    height: 60%;
+    z-index:2;
+}
+
+.full-workshop {
+    margin-top: calc(var(--base-spacing)*10);
+}
+.full-workshop .images {
+    margin-top: calc(var(--base-spacing)*8);
+}
+.full-workshop .images .full-width-image {
+    background-image: url('../images/who-are-we-booth.jpg');
+    height: 50vh;
+}
+.full-workshop .images .floating-image {
+    top: calc(var(--base-spacing)*-2);
+    right: calc(var(--base-spacing)*-2);
+    width: 150px;
+    height: 220px;
+}
+.full-workshop .images .floating-image.second {
+    top: auto;
+    bottom: calc(var(--base-spacing)*-2);
+    left: calc(var(--base-spacing)*-2);
+    width: 300px;
+    height: 160px;
+}
+
+
+.digital-making {
+    margin-top: calc(var(--base-spacing)*10);
+}
+.digital-making .images {
+    margin-top: calc(var(--base-spacing)*8);
+}
+.digital-making .images .full-width-image {
+    background-image: url('../images/who-are-we-booth.jpg');
+    height: 50vh;
+}
+.digital-making .images .floating-image {
+    top: calc(var(--base-spacing)*-2);
+    left: calc(var(--base-spacing)*8);
+    width: 150px;
+    height: 220px;
+}
+
+.meeting-rooms {
+    margin-top: calc(var(--base-spacing)*10);
+}
+.meeting-rooms .images {
+    margin-top: calc(var(--base-spacing)*8);
+}
+.meeting-rooms .images .full-width-image {
+    background-image: url('../images/who-are-we-booth.jpg');
+    height: 50vh;
+}
+.meeting-rooms .images .floating-image {
+    top: calc(var(--base-spacing)*-2);
+    left: calc(var(--base-spacing)*8);
+    width: 350px;
+    height: 180px;
+}
+.meeting-rooms .images .floating-image.second {
+    top: auto;
+    bottom: calc(var(--base-spacing)*-2);
+    left: calc(var(--base-spacing)*22);
+    width: 200px;
+    height: 100px;
+}
+
+.hackney-depot {
+    margin-top: calc(var(--base-spacing)*10);
+}
+.hackney-depot .images {
+    margin-top: calc(var(--base-spacing)*8);
+}
+.hackney-depot .images .full-width-image {
+    background-image: url('../images/who-are-we-booth.jpg');
+    height: 70vh;
+}
+.hackney-depot .images .floating-image {
+    top: calc(var(--base-spacing)*-2);
+    right: calc(var(--base-spacing)*-2);
+    width: 250px;
+    height: 160px;
+}
+.hackney-depot .images .floating-image.second {
+    top: auto;
+    bottom: calc(var(--base-spacing)*-2);
+    left: calc(50% - 125px);
+    width: 250px;
+    height: 160px;
+}
+
+section.join-us .facilities-join-us {
+    position:absolute;
+    width: 100%;
+    height:50%;
+    margin: 0px auto 0px auto;
+    background: url('../res/wiggle_joinus.svg');
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

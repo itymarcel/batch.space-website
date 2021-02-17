@@ -1,10 +1,26 @@
 /* layout xoxo */
+.covid {
+    position: absolute;
+    top: calc(var(--base-spacing)*-6);
+    width: 100%;
+    background: var(--purple);
+    padding: calc(var(--base-spacing) * 0.5) 0px calc(var(--base-spacing) * 0.5) 0px;
+    color: white;
+    text-align: center;
+    z-index: 3;
+}
+.covid a {
+    text-decoration: none;
+}
+.covid a:hover {
+    text-decoration: underline;
+}
 header {
     position: sticky;
-    top: 0px;
+    top: var(--base-spacing);
     width: var(--site-width);
     max-width: var(--site-max-width);
-    margin: calc(var(--base-spacing)*4) auto calc(var(--base-spacing)*4) auto;
+    margin: calc(var(--base-spacing)*6) auto calc(var(--base-spacing)*4) auto;
     box-sizing: border-box;
 
     display: flex;
@@ -47,7 +63,7 @@ header .logo {
     background-position: left center;
 
     transform: scale(1);
-    transform-origin: center;
+    transform-origin: left center;
     transition: all calc(var(--transition-time)*1.5) var(--easeout);
     transition-delay: calc(var(--transition-time) * 2) !important;
     cursor: pointer;
@@ -55,7 +71,6 @@ header .logo {
 
 header .logo:hover {
     transform: scale(1.1);
-    transition-delay: calc(var(--transition-time) * 2);
 }
 
 header nav {
@@ -83,9 +98,10 @@ header nav ol {
 
 header nav ol a {
     margin-left: calc(var(--base-spacing)*2);
+    text-decoration: none;
 }
 header nav ol li.button {
-    padding: calc(var(--base-spacing)/2) var(--base-spacing) calc(var(--base-spacing)/2) var(--base-spacing);
+    padding: calc(var(--base-spacing)/1.5 - 2px) var(--base-spacing) calc(var(--base-spacing)/1.5) var(--base-spacing);
 }
 @media only screen 
   and (max-width: 750px) {

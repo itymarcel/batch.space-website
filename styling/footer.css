@@ -6,10 +6,12 @@ footer {
 }
 
 footer a {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid var(--button-hover-fill);
 }
 
 footer a:hover {
+    border-bottom: 0px solid var(--button-hover-fill);
     text-decoration: none;
 }
 
@@ -32,10 +34,12 @@ footer section.website-annotation {
     font-size: 12px;
     opacity: 0.2;
     cursor: default;
+    transition: all calc(var(--transition-time)*2) var(--easeout);
 }
 
-footer section.website-annotation:hover {
+footer:hover section.website-annotation {
     opacity: 1;
+    transform: translate(0px, -5px);
 }
 
 @media only screen 

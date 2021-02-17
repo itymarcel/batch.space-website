@@ -14,20 +14,28 @@
         <link rel="stylesheet" href="styling/columns.css" />
         <link rel="stylesheet" href="styling/header.css" />
         <link rel="stylesheet" href="styling/content.css" />
+        <link rel="stylesheet" href="styling/sub-pages.css" />
         <link rel="stylesheet" href="styling/footer.css" />
+
+        <script src="js/w3include.js"></script>
     </head>
     <body>
         <div class="scroll_observer"></div>
+        <div class="covid">
+            <a href="besafe.html">
+                Keep our community secure during Covid-19 time &#8594;
+            </a>
+        </div>
         <header class="batchspace-header">
-            <div class="logo"></div>
+            <a href="index.html"><div class="logo"></div></a>
             <nav>
                 <div class="nav-toggle">
                     <div></div>
                     <div></div>
                 </div>
                 <ol>
-                    <a href="#" target="_self"><li>Packages</li></a>
-                    <a href="#" target="_self"><li>Facilities</li></a>
+                    <a href="packages.html" target="_self"><li>Packages</li></a>
+                    <a href="facilities.html" target="_self"><li>Facilities</li></a>
                     <a class="button-link external-link" href="https://batchspace.spaces.nexudus.com/" target="_blank"><li class="button">Member Area</li></a>
                 </ol>
             </nav>
@@ -71,7 +79,7 @@
 
                 <div class="columns wrapper">
                     <div class="one-column facility facility-workspace">
-                        <a href="#">
+                        <a href="facilities.html#studio-and-desks">
                             <div class="image">
                                 <div class="slideshow-container">
                                     <div class="slideshow-all-images">
@@ -85,7 +93,7 @@
                         </a>
                     </div>
                     <div class="one-column facility facility-workshop">
-                        <a href="#">
+                        <a href="facilities.html#full-workshop">
                             <div class="image">
                                 <div class="slideshow-container">
                                     <div class="slideshow-all-images" style="animation-delay:0.3s;">
@@ -99,7 +107,7 @@
                         </a>
                     </div>
                     <div class="one-column facility facility-meeting">
-                        <a href="#">
+                        <a href="facilities.html#meeting-rooms">
                             <div class="image">
                                 <div class="slideshow-container">
                                     <div class="slideshow-all-images" style="animation-delay:0.6s;">
@@ -121,7 +129,7 @@
                     <div class="warpy-rect-container"><div class="warpy-rect"></div></div>
                     <div class="headline">Interested in joining the community?</div>
                     <div class="headline big-copy">Desks are for grab right now.</div>
-                    <a class="button-link" href="https://batchspace.spaces.nexudus.com/?portal&#priceplans" target="_blank"><div class="button">Discover our packages</div></a>
+                    <a class="button-link" href="packages.html" target="_blank"><div class="button">Discover our packages</div></a>
                     <a class="button-link" href="mailto:hello@batch.space"><div class="button">Get in touch</div></a>
                 </div>
             </section>
@@ -145,8 +153,10 @@
                 Composed by 💠 <a href="https://julieaparicio.com" target="_blank">Julie</a>, produced by ☯ <a href="https://www.instagram.com/itisfinji/" target="_blank">Marci aka finji.</a>
             </section>
         </footer>
-    
     </body>
+    <script>
+    includeHTML();
+    </script>
     <script src="js/batchspace.js"></script>
     <script src="js/intersectionobserver.js"></script>
 </html>

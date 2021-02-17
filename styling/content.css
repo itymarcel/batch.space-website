@@ -1,10 +1,6 @@
 main .button {
     display: inline-block;
     width: auto;
-    padding: calc(var(--base-spacing)) 
-    calc(var(--base-spacing)*2) 
-    calc(var(--base-spacing))
-    calc(var(--base-spacing)*2);
 
     box-sizing: border-box;
     
@@ -124,6 +120,7 @@ main section.who-we-are .floating-image {
 
 main section.facilities {
     width: 100%;
+    max-width: 100%;
     padding-top: calc(var(--base-spacing)*7);
     color: white;
     background: var(--purple);
@@ -160,6 +157,10 @@ main section.facilities .facility {
 
 main section.facilities .facility:hover {
     transform: scale(1.05, 1.05);
+}
+
+main section.facilities .facility a {
+    text-decoration: none;
 }
 
 main section.facilities .facility a > div:not(.image) {
