@@ -40,7 +40,7 @@ header {
     header.stuck {
         width: 98%;
         max-width: 98%;
-        margin: calc(var(--base-spacing)*4) auto calc(var(--base-spacing)*4) auto;
+        margin: calc(var(--base-spacing)*6) auto calc(var(--base-spacing)*4) auto;
         background: rgba(255, 255, 255, 0);
         top:var(--base-spacing);
     }

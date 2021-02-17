@@ -9,6 +9,17 @@ section.sub-page-intro .columns {
     max-width: 70%;
     margin: 0px auto 0px auto;
 }
+@media only screen 
+  and (max-width: 750px) {
+    section.sub-page-intro { 
+        margin-top: calc(var(--base-spacing));
+        padding-top: calc(var(--base-spacing)*0.5);
+    }
+    section.sub-page-intro .columns {
+        max-width: 100%;
+    }     
+}
+
 section.sub-page-intro h1 {
     font-size: 69px;
     font-weight: normal;
@@ -25,6 +36,15 @@ section.sub-page-intro .big-copy {
 
 section.sub-page-intro.packages {
     background-image: url('../res/wiggle_packages.svg');
+}
+
+@media only screen 
+  and (max-width: 750px) {
+    section.sub-page-intro.packages {
+        background-image: url('../res/wiggle_packages.svg');
+        background-position: center 5vh;
+        background-size: 80%;
+    }
 }
 
 section.packages {
@@ -93,6 +113,15 @@ section.sub-page-intro.facilities-page {
     background-image: url('../res/wiggle_facilities.svg');
     background-size: 30%;
     padding-bottom: calc(var(--base-spacing)*10);
+}
+
+@media only screen 
+  and (max-width: 750px) {
+    section.sub-page-intro.facilities-page {
+        background-image: url('../res/wiggle_packages.svg');
+        background-size: 80%;
+        background-position: center 10vh;
+    }
 }
 section.sub-page-intro.facilities-page .image {
     margin: calc(var(--base-spacing)*5) auto 0px auto;
