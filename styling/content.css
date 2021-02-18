@@ -122,6 +122,7 @@ main section.facilities {
     width: 100%;
     max-width: 100%;
     padding-top: calc(var(--base-spacing)*7);
+    margin-bottom: calc(var(--base-spacing)*7);
     color: white;
     background: var(--purple);
     box-sizing: border-box;
@@ -212,7 +213,7 @@ main section.join-us {
     max-width: var(--site-max-width);
     margin: 0px auto 0px auto;
     min-height: 300px;
-    padding-top: calc(var(--base-spacing)*15);
+    padding-top: calc(var(--base-spacing)*10);
     padding-bottom: calc(var(--base-spacing)*10);
     text-align: center;    
 }
@@ -245,7 +246,10 @@ main section.join-us .warpy-rect {
     width: 50%;
     left: 25%;
     height:100%;
-    background: white;
+    background: url('../res/wiggle_joinus.svg');
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
 
     transform-origin: center;
     animation: bendrect 60s infinite;

@@ -102,8 +102,100 @@ header nav ol a {
     text-decoration: none;
 }
 header nav ol li.button {
+    box-sizing: border-box;
+    transform: scale3d(1, 1, 1);
+    transition: all calc(var(--transition-time)*0) var(--easinout);
     padding: calc(var(--base-spacing)/1.5 - 2px) var(--base-spacing) calc(var(--base-spacing)/1.5) var(--base-spacing);
 }
+header nav ol li.button:hover {
+    background-color: transparent;
+    transform: scale3d(1.05, 1.05, 1.05);
+    transition-duration: calc(var(--transition-time)*1);
+    animation: button-colors 1s infinite;
+    animation-timing-function: var(--easinout);
+}
+header nav ol li.button:active {
+    transform: scale3d(0.9, 0.9, 0.9);
+}
+header nav ol li.button span.button-background-container {
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    display: none;
+    top:0px;
+    left:0px;   
+}
+header nav ol li.button span.button-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transform: scale(0.9, 0.5);
+    transition: all calc(var(--transition-time)*2) var(--easeout);
+    transition-delay: 0s;
+    z-index: 0;
+}
+header nav ol li.button .button-background-container > span.button-background:nth-child(1) {
+    border: 0px solid #2A13AD;
+    background-color: #2A13AD;
+}
+header nav ol li.button .button-background-container > span.button-background:nth-child(2) {
+    border: 0px solid #EF8000;
+    background-color: #EF8000;
+    transition-delay: calc(var(--transition-time)*2);
+}
+header nav ol li.button .button-background-container > span.button-background:nth-child(3) {
+    border: 0px solid #FFE65F;
+    background-color: #FFE65F;
+    transition-delay: calc(var(--transition-time)*5);
+}
+header nav ol li.button:hover span.button-background {
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+@keyframes button-background {
+    0% {
+        transform: scale(0, 0);
+    }
+    100% {
+
+    }
+}
+@keyframes  button-colors {
+    0% {
+        background-color: transparent;
+    }
+    5% {
+        background-color: #FFE65F;
+    }
+    25% {
+        background-color: #FFE65F;
+    }
+    30% {
+        background-color:  #2A13AD;
+    }
+    50% {
+        background-color:  #2A13AD;
+    }
+    55% {
+        background-color: #EF8000;
+    }
+    75% {
+        background-color: #EF8000;
+    }
+    80% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+
 @media only screen 
   and (max-width: 750px) {
     header nav .nav-toggle {
