@@ -109,7 +109,6 @@ header nav ol li.button {
 }
 header nav ol li.button:hover {
     background-color: transparent;
-    transform: scale3d(1.02, 1.02, 1.02);
     transition-duration: calc(var(--transition-time)*1);
     transition-timing-function: var(--easeout);
     animation: button-colors 1s infinite;
