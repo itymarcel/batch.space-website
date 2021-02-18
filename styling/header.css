@@ -104,13 +104,14 @@ header nav ol a {
 header nav ol li.button {
     box-sizing: border-box;
     transform: scale3d(1, 1, 1);
-    transition: all calc(var(--transition-time)*0) var(--easinout);
+    transition: all calc(var(--transition-time)*0) var(--easeout);
     padding: calc(var(--base-spacing)/1.5 - 2px) var(--base-spacing) calc(var(--base-spacing)/1.5) var(--base-spacing);
 }
 header nav ol li.button:hover {
     background-color: transparent;
-    transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.02, 1.02, 1.02);
     transition-duration: calc(var(--transition-time)*1);
+    transition-timing-function: var(--easeout);
     animation: button-colors 1s infinite;
     animation-timing-function: var(--easinout);
 }

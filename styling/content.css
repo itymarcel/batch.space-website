@@ -253,7 +253,7 @@ main section.join-us .warpy-rect {
 
     transform-origin: center;
     animation: bendrect 60s infinite;
-    animation-timing-function: linear;
+    animation-timing-function: var(--easinout);
 }
 
 @keyframes bendrect {

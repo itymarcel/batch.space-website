@@ -18,6 +18,7 @@
     --base-spacing: 14px;
 
     --easeout:cubic-bezier(0.250, 0.250, 0.015, 1.005);
+    --easein:cubic-bezier(0.910, 0.005, 0.905, 0.985);
     --easinout: cubic-bezier(0.410, 0.025, 0.175, 0.985);
     --transition-time: 80ms;
 }
