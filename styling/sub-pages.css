@@ -100,8 +100,12 @@ a.package-links {
     width: auto;
     margin-bottom: calc(var(--base-spacing)*3);
 }
+.button.package .headline .price {
+    display: block;
+    margin-top:calc(var(--base-spacing)/2);
+}
 
-.button.package:hover .headline span {
+.button.package:hover .headline > span:first-child {
     border-bottom: 2px solid var(--button-hover-fill);
 }
 
@@ -151,8 +155,8 @@ section.sub-page-intro.facilities-page .image {
   }
 
 section.sub-page-intro.facilities-page .floating-image {
-    bottom: calc(var(--base-spacing)*8);
-    left: calc(50% - 20px);
+    bottom: calc(var(--base-spacing)*5);
+    left: calc(50% - 30px);
     width: 230px;
     height: 130px;
 }
@@ -204,14 +208,14 @@ section.sub-page-intro.facilities-page .floating-image {
     margin-top: calc(var(--base-spacing)*8);
 }
 .digital-making .images .full-width-image {
-    background-image: url('../images/who-are-we-booth.jpg');
+    background-image: url('../images/facilities/digispace-03.jpg');
     height: 50vh;
 }
 .digital-making .images .floating-image {
     top: calc(var(--base-spacing)*-2);
     left: calc(var(--base-spacing)*8);
-    width: 150px;
-    height: 220px;
+    width: 250px;
+    height: 130px;
 }
 
 .meeting-rooms {

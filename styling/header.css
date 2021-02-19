@@ -114,9 +114,6 @@ header nav ol li.button:hover {
     animation: button-colors 1s infinite;
     animation-timing-function: var(--easinout);
 }
-header nav ol li.button:active {
-    transform: scale3d(0.9, 0.9, 0.9);
-}
 header nav ol li.button span.button-background-container {
     position:absolute;
     width:100%;
