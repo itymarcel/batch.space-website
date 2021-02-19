@@ -152,6 +152,9 @@ section.sub-page-intro.facilities-page .image {
         margin: calc(var(--base-spacing)*1) auto 0px auto !important;
         padding-top: calc(var(--base-spacing)*1) !important;
     }
+    section.sub-page-intro.facilities-page .image {
+        width: auto;
+    }
   }
 
 section.sub-page-intro.facilities-page .floating-image {

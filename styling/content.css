@@ -239,6 +239,7 @@ main section.join-us .warpy-rect-container {
     height:100%;
     perspective: 800px;
     transform-origin: center;
+    overflow: hidden;
 }
 
 main section.join-us .warpy-rect {
@@ -254,6 +255,14 @@ main section.join-us .warpy-rect {
     transform-origin: center;
     animation: bendrect 60s infinite;
     animation-timing-function: var(--easinout);
+}
+
+@media only screen 
+  and (max-width: 750px) {
+    main section.join-us .warpy-rect {
+        width: 100%;
+        left: 0%;
+    }
 }
 
 @keyframes bendrect {
