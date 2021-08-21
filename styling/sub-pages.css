@@ -282,11 +282,15 @@ section.sub-page-intro.besafe {
 }
 section.sub-page-intro.besafe h1 {
     font-weight: normal;
-    text-align: left;
 }
-section.sub-page-intro.besafe .columns {
+
+section.sub-page-intro.besafe .image {
+    height: 500px;
     width: 100%;
-    max-width: 100%;
+    margin: 0 auto 0 auto;
+    background-size: cover;
+    background-position: center;
+    margin-top: calc(var(--base-spacing) * 5);
 }
 
 .current-measures {

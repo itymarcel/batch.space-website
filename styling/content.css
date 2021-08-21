@@ -257,6 +257,16 @@ main section.join-us .warpy-rect {
     animation-timing-function: var(--easinout);
 }
 
+main section.besafe {
+    padding-top: calc(var(--base-spacing)*4);
+    padding-bottom: calc(var(--base-spacing)*2);
+}
+main section.besafe .apply-button {
+    display:block;
+    margin-top: calc(var(--base-spacing)*3);
+    margin-bottom: calc(var(--base-spacing)*7);
+}
+
 @media only screen 
   and (max-width: 750px) {
     main section.join-us .warpy-rect {
