@@ -41,6 +41,42 @@ section.sub-page-intro .big-copy {
 
 /* PACKAGES */
 
+.become-member-overlay {
+    position:fixed;
+    background: rgba(254, 250, 232, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+
+    display: none;
+     
+    gap: 10px;
+}
+.become-member-overlay.visible {
+    display: flex;
+}
+.become-member-overlay a {
+    position: relative;
+    top: -35px;
+    width: auto;
+    padding: 20px 30px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: var(--big-haas-type);
+    transition: all 130ms cubic-bezier(0.725, 0.090, 0.170, 0.980);
+}
+
+.become-member-overlay a:hover {
+    transform: scale(1.03);
+}
+
 section.sub-page-intro.packages {
     background-image: url('../res/wiggle_packages.svg');
 }
@@ -79,7 +115,7 @@ a.package-links {
 
 .button.package:hover {
     background-color: white;
-    transform: translateY(calc(var(--base-spacing) * -1));
+    /*transform: translateY(calc(var(--base-spacing) * -1));*/
 }
 
 .button.package .icon {
