@@ -25,16 +25,16 @@ package_links.forEach(package_link => {
         let availabilitySubject = '';
         event.currentTarget.classList.forEach(className => {
             if(className === 'resident') {
-                availabilitySubject = 'Inquiry about availability for a Resident membership';
+                availabilitySubject = 'Inquiry about availability for a Resident Membership';
             } else if(className === 'nomad') {
-                availabilitySubject = 'Inquiry about availability for a Nomad Resident membership';
+                availabilitySubject = 'Inquiry about availability for a Nomad Resident Membership';
             } else {
-                availabilitySubject = 'Inquiry about availability for a Escape From Home membership';
+                availabilitySubject = 'Inquiry about availability for a Escape From Home Membership';
             }
         });
         become_member_overlay.classList.add('visible');
         document.querySelector(".become-member-overlay .check-availability").href = 'mailto:hello@batch.works?subject=' + availabilitySubject;
-        document.querySelector(".become-member-overlay .book-a-tour").href = 'mailto:hello@batch.works?subject=Inquiry to book a tour through the studio';
+        document.querySelector(".become-member-overlay .book-a-tour").href = 'mailto:hello@batch.works?subject=I would like to book a tour through the studio';
     });
 })
 
