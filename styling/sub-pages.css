@@ -141,6 +141,10 @@ a.package-links {
     margin-top:calc(var(--base-spacing)/2);
 }
 
+.button.package .headline .vat {
+    font-size: 11px;
+}
+
 .button.package:hover .headline > span:first-child {
     border-bottom: 2px solid var(--button-hover-fill);
 }
